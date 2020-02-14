@@ -1,0 +1,4420 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = #181'FR NDEF Delphi'
+  ClientHeight = 719
+  ClientWidth = 1228
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StatusBar1: TStatusBar
+    Position.Y = 686.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 1228.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label5: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Status:'
+      TabOrder = 0
+    end
+    object StatusLabel: TLabel
+      Position.X = 56.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 401.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 1228.000000000000000000
+    Size.Height = 541.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object ScrollBox1: TScrollBox
+      Align = MostLeft
+      Size.Width = 145.000000000000000000
+      Size.Height = 541.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 129.000000000000000000
+      Viewport.Height = 541.000000000000000000
+      object btnWifiFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 5
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '  WiFi'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnWifiFrameClick
+      end
+      object btnUriFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 9
+        Position.Y = 50.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '  URI'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnUriFrameClick
+      end
+      object btnEmailFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 3
+        Position.Y = 300.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '  Email'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnEmailFrameClick
+      end
+      object btnViberFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 15
+        Position.Y = 750.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = '  Viber'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnViberFrameClick
+      end
+      object btnWhatsappFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 17
+        Position.Y = 800.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = '  Whatsapp'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnWhatsappFrameClick
+      end
+      object btnSkypeFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 16
+        Position.Y = 700.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = '  Skype'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnSkypeFrameClick
+      end
+      object btnBitcoinFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 10
+        Position.Y = 650.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = '  Bitcoin'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnBitcoinFrameClick
+      end
+      object btnContactFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 14
+        Position.Y = 600.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = '  Contact'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnContactFrameClick
+      end
+      object btnPhoneFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 11
+        Position.Y = 550.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = '  Phone'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnPhoneFrameClick
+      end
+      object btnAddressFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 12
+        Position.Y = 350.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = '  Address'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnAddressFrameClick
+      end
+      object btnStreetViewFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 7
+        Position.Y = 500.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        Text = '  StreetView'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnStreetViewFrameClick
+      end
+      object btnTextFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 1
+        Position.Y = 450.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        Text = '  Text'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnTextFrameClick
+      end
+      object btnApplicationFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 13
+        Position.Y = 400.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+        Text = '  Application'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnApplicationFrameClick
+      end
+      object btnDestinationFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 0
+        Position.Y = 250.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        Text = '  Destination'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnDestinationFrameClick
+      end
+      object btnLocationFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 4
+        Position.Y = 200.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+        Text = '  Location'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnLocationFrameClick
+      end
+      object btnBluetoothFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 8
+        Position.Y = 100.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        Text = '  Bluetooth'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnBluetoothFrameClick
+      end
+      object btnSmsFrame: TButton
+        Align = Top
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 2
+        Position.Y = 150.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 16
+        Text = '  SMS'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnSmsFrameClick
+      end
+      object btnRawDataFrame: TButton
+        StyledSettings = [Family, Size, FontColor]
+        Images = ImageList1
+        ImageIndex = 18
+        Position.Y = 849.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 17
+        Text = '  RAW Data'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.HorzAlign = Leading
+        OnClick = btnRawDataFrameClick
+      end
+    end
+    object MainPanel: TPanel
+      Align = Client
+      Size.Width = 1083.000000000000000000
+      Size.Height = 541.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object TabControl1: TTabControl
+        Align = Client
+        Size.Width = 1083.000000000000000000
+        Size.Height = 541.000000000000000000
+        Size.PlatformDefault = False
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = PlatformDefault
+        Sizes = (
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s
+          1083s
+          515s)
+        object WiFiTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          ImageIndex = 0
+          Size.Width = 43.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'WiFi'
+          ExplicitSize.cx = 43.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox3: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'WiFi Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object btnReadWifi: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 176.000000000000000000
+              Size.Width = 441.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'READ'
+              OnClick = btnReadWifiClick
+            end
+            object lblSsid: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'SSID Name:'
+              TabOrder = 1
+            end
+            object Label1: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 76.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Auth type:'
+              TabOrder = 2
+            end
+            object Label2: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 106.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Encryption:'
+              TabOrder = 3
+            end
+            object Label3: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 138.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Password:'
+              TabOrder = 4
+            end
+            object SsidReadTxt: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 5
+              ReadOnly = True
+              Position.X = 96.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object AuthTypeReadTxt: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 6
+              ReadOnly = True
+              Position.X = 96.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object EncReadTxt: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 7
+              ReadOnly = True
+              Position.X = 96.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object PasswordReadTxt: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 8
+              ReadOnly = True
+              Position.X = 96.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 369.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object GroupBox4: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'WiFi Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label4: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'SSID Name:'
+              TabOrder = 3
+            end
+            object SsidEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 5
+              Position.X = 96.000000000000000000
+              Position.Y = 38.000000000000000000
+              Size.Width = 361.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label6: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Auth type:'
+              TabOrder = 2
+            end
+            object Label7: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Encryption:'
+              TabOrder = 1
+            end
+            object Label8: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Password:'
+              TabOrder = 0
+            end
+            object PasswordEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 4
+              Position.X = 96.000000000000000000
+              Position.Y = 134.000000000000000000
+              Size.Width = 361.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnWriteWifi: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 176.000000000000000000
+              Size.Width = 441.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'WRITE'
+              OnClick = btnWriteWifiClick
+            end
+            object AuthTypeCB: TComboBox
+              Items.Strings = (
+                'OPEN'
+                'WPA Personal'
+                'WPA Enterprise'
+                'WPA2 Enterprise'
+                'WPA2 Personal')
+              ItemIndex = 0
+              Position.X = 96.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 361.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+            end
+            object EncCB: TComboBox
+              Items.Strings = (
+                'NONE'
+                'WEP'
+                'TKIP'
+                'AES'
+                'AES/TKIP')
+              ItemIndex = 0
+              Position.X = 96.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 361.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 8
+            end
+            object GroupBox5: TGroupBox
+              Position.X = 24.000000000000000000
+              Position.Y = 224.000000000000000000
+              Size.Width = 441.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 9
+              object RBWifiTag: TRadioButton
+                GroupName = 'Wifi'
+                IsChecked = True
+                Position.X = 80.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBWifiReader: TRadioButton
+                GroupName = 'Wifi'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object UriTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 39.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'URI'
+          ExplicitSize.cx = 39.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox6: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'URI Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label9: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 50.000000000000000000
+              Size.Width = 33.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'URI:'
+              TabOrder = 0
+            end
+            object UriTxt: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 64.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnReadUri: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 457.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnReadUriClick
+            end
+          end
+          object GroupBox7: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'URI Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label10: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 48.000000000000000000
+              Text = 'URI Identifier code:'
+              TabOrder = 0
+            end
+            object UriCB: TComboBox
+              Items.Strings = (
+                'N/A. No prepending is done.'
+                'http://www.'
+                'https://'
+                'tel:'
+                'mailto:'
+                'ftp://anonymous:anonymous@'
+                'ftp://ftp.'
+                'ftps://'
+                'sftp://'
+                'smb://'
+                'nfs://'
+                'ftp://'
+                'dav://'
+                'news:'
+                'telnet://'
+                'imap:'
+                'rtsp://'
+                'urn:'
+                'pop:'
+                'sip:'
+                'sips:'
+                'tftp:'
+                'btspp://'
+                'btl2cap://'
+                'btgoep://'
+                'tcpobex://'
+                'irdaobex://'
+                'file://'
+                'urn:epc:id:'
+                'urn:epc:tag:'
+                'urn:epc:pat:'
+                'urn:epc:raw:'
+                'urn:epc:'
+                'urn:nfc:')
+              ItemIndex = 1
+              Position.X = 136.000000000000000000
+              Position.Y = 46.000000000000000000
+              Size.Width = 345.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+            object Label11: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'URI field:'
+              TabOrder = 2
+            end
+            object UriFieldEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              Position.X = 80.000000000000000000
+              Position.Y = 86.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnWriteUri: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 128.000000000000000000
+              Size.Width = 457.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'WRITE'
+              OnClick = btnWriteUriClick
+            end
+            object GroupBox8: TGroupBox
+              Position.X = 24.000000000000000000
+              Position.Y = 184.000000000000000000
+              Size.Width = 457.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 5
+              object RBUriTag: TRadioButton
+                GroupName = 'Uri'
+                IsChecked = True
+                Position.X = 80.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBUriReader: TRadioButton
+                GroupName = 'Uri'
+                Position.X = 280.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object BluetoothTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 72.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Bluetooth'
+          ExplicitSize.cx = 72.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox9: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 32.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Bluetooth Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label12: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 66.000000000000000000
+              Size.Width = 137.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Bluetooth MAC address:'
+              TabOrder = 0
+            end
+            object BluetoothReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 160.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 329.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnBluetoothRead: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnBluetoothReadClick
+            end
+          end
+          object GroupBox10: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 552.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Bluetooth Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label13: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 137.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Bluetooth MAC address:'
+              TabOrder = 0
+            end
+            object BluetoothWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 152.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 337.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnBluetoothWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnBluetoothWriteClick
+            end
+            object GroupBox11: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 168.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBBluetoothTag: TRadioButton
+                GroupName = 'Bluetooth'
+                IsChecked = True
+                Position.X = 56.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBBluetoothReader: TRadioButton
+                GroupName = 'Bluetooth'
+                Position.X = 256.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object SmsTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 44.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'SMS'
+          ExplicitSize.cx = 44.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox12: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'SMS Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label14: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 50.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Phone number:'
+              TabOrder = 0
+            end
+            object PhoneNumReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label15: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 2
+            end
+            object MessageReadEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 161.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Viewport.Width = 373.000000000000000000
+              Viewport.Height = 157.000000000000000000
+            end
+            object btnReadSms: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 264.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'READ'
+              OnClick = btnReadSmsClick
+            end
+          end
+          object GroupBox13: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 544.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'SMS Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label16: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Phone number:'
+              TabOrder = 0
+            end
+            object PhoneNumWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 112.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label17: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 2
+            end
+            object MessageWriteEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 112.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 161.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+              Viewport.Width = 373.000000000000000000
+              Viewport.Height = 157.000000000000000000
+            end
+            object btnWriteSms: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 264.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'WRITE'
+              OnClick = btnWriteSmsClick
+            end
+            object GroupBox14: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 328.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 5
+              object RBSmsTag: TRadioButton
+                GroupName = 'Sms'
+                IsChecked = True
+                Position.X = 56.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBSmsReader: TRadioButton
+                GroupName = 'Sms'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object LocationTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 66.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Location'
+          ExplicitSize.cx = 66.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object gbLocation: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Location Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label18: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Latitude:'
+              TabOrder = 0
+            end
+            object Label19: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Longitude:'
+              TabOrder = 1
+            end
+            object GeoLatReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 2
+              ReadOnly = True
+              Position.X = 80.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object GeoLonReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              ReadOnly = True
+              Position.X = 80.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnLocationRead: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 128.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'READ'
+              OnClick = btnLocationReadClick
+            end
+          end
+          object GroupBox15: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Location Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label20: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Latitude:'
+              TabOrder = 0
+            end
+            object Label21: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Longitude:'
+              TabOrder = 1
+            end
+            object GeoLatWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 2
+              Position.X = 88.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object GeoLonWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              Position.X = 88.000000000000000000
+              Position.Y = 88.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnLocationWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 128.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'WRITE'
+              OnClick = btnLocationWriteClick
+            end
+            object GroupBox16: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 192.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 73.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 5
+              object RBGeoTag: TRadioButton
+                GroupName = 'Geo'
+                IsChecked = True
+                Position.X = 48.000000000000000000
+                Position.Y = 32.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBGeoReader: TRadioButton
+                GroupName = 'Geo'
+                Position.X = 232.000000000000000000
+                Position.Y = 32.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object DestinationTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 81.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Destination'
+          ExplicitSize.cx = 81.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox17: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 16.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Destionation Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label22: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 50.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Destination:'
+              TabOrder = 0
+            end
+            object DestinationReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnDestinationRead: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnDestinationReadClick
+            end
+          end
+          object GroupBox18: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 528.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Destination Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label23: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 50.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Destination:'
+              TabOrder = 0
+            end
+            object DestinationWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 88.000000000000000000
+              Position.Y = 48.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnDestinationWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnDestinationWriteClick
+            end
+            object GroupBox19: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 160.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBDestinationTag: TRadioButton
+                GroupName = 'Destination'
+                IsChecked = True
+                Position.X = 48.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBDestinationReader: TRadioButton
+                GroupName = 'Destination'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object EmailTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 49.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Email'
+          ExplicitSize.cx = 49.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox20: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 16.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Email Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label24: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Email address:'
+              TabOrder = 0
+            end
+            object Label25: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Subject:'
+              TabOrder = 1
+            end
+            object Label26: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 2
+            end
+            object EAddressReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              ReadOnly = True
+              Position.X = 104.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object SubjectReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 4
+              ReadOnly = True
+              Position.X = 104.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object EMessageReadEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 104.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 145.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Viewport.Width = 381.000000000000000000
+              Viewport.Height = 141.000000000000000000
+            end
+            object btnReadEmail: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 264.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'READ'
+              OnClick = btnReadEmailClick
+            end
+          end
+          object GroupBox21: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 528.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Email Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label27: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Email address:'
+              TabOrder = 0
+            end
+            object Label28: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Subject:'
+              TabOrder = 1
+            end
+            object Label29: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 73.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 2
+            end
+            object EAddressWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              Position.X = 104.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object SubjectWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 4
+              Position.X = 104.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object EMessageWriteEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 104.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 145.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Viewport.Width = 381.000000000000000000
+              Viewport.Height = 141.000000000000000000
+            end
+            object btnWriteEmail: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 264.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'WRITE'
+              OnClick = btnWriteEmailClick
+            end
+            object GroupBox22: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 328.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 7
+              object RBEmailTag: TRadioButton
+                GroupName = 'Email'
+                IsChecked = True
+                Position.X = 48.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton1: TRadioButton
+                GroupName = 'Email'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object AddressTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 63.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Address'
+          ExplicitSize.cx = 63.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox23: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Read Address'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label30: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 42.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Address:'
+              TabOrder = 0
+            end
+            object AddressReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 80.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnReadAddress: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnReadAddressClick
+            end
+          end
+          object GroupBox24: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Write Address'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label31: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 42.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Address:'
+              TabOrder = 0
+            end
+            object AddressWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 80.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnWriteAddress: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnWriteAddressClick
+            end
+            object GroupBox25: TGroupBox
+              Position.X = 24.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBAddressTag: TRadioButton
+                GroupName = 'Address'
+                IsChecked = True
+                Position.X = 64.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBAddressReader: TRadioButton
+                GroupName = 'Address'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object ApplicationTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 81.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Application'
+          ExplicitSize.cx = 81.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox26: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Application Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label32: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Package name:'
+              TabOrder = 0
+            end
+            object ApplicationReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnApplicationRead: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnApplicationReadClick
+            end
+          end
+          object GroupBox27: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Application Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label33: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Package name:'
+              TabOrder = 0
+            end
+            object ApplicationWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 112.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnApplicationWrite: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 80.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnApplicationWriteClick
+            end
+            object GroupBox28: TGroupBox
+              Position.X = 24.000000000000000000
+              Position.Y = 144.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBApplicationTag: TRadioButton
+                GroupName = 'Application'
+                IsChecked = True
+                Position.X = 64.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton2: TRadioButton
+                GroupName = 'Application'
+                Position.X = 256.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object TextTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 41.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Text'
+          ExplicitSize.cx = 41.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox29: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Text Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label34: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 41.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Text:'
+              TabOrder = 0
+            end
+            object TextReadEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 56.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 433.000000000000000000
+              Size.Height = 97.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 429.000000000000000000
+              Viewport.Height = 93.000000000000000000
+            end
+            object btnReadText: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 152.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnReadTextClick
+            end
+          end
+          object GroupBox30: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Text Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label35: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 33.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Text:'
+              TabOrder = 0
+            end
+            object TextWriteEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 48.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 441.000000000000000000
+              Size.Height = 97.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 437.000000000000000000
+              Viewport.Height = 93.000000000000000000
+            end
+            object btnTextWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 152.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnTextWriteClick
+            end
+            object GroupBox31: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 208.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBTextTag: TRadioButton
+                GroupName = 'Text'
+                IsChecked = True
+                Position.X = 56.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton3: TRadioButton
+                GroupName = 'Text'
+                Position.X = 264.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object StreetViewTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 77.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'StreetView'
+          ExplicitSize.cx = 77.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object gb32: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'StreetView Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label36: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 42.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Latitude:'
+              TabOrder = 0
+            end
+            object Label37: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 74.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Longitude:'
+              TabOrder = 1
+            end
+            object SVLatitudeReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 2
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object SVLongitudeReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnStreetViewRead: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 112.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'READ'
+              OnClick = btnStreetViewReadClick
+            end
+          end
+          object GroupBox32: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'StreetView Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label38: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Latitude:'
+              TabOrder = 0
+            end
+            object Label39: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Longitude:'
+              TabOrder = 1
+            end
+            object SVLongitudeWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 2
+              Position.X = 88.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object SVLatitudeWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              Position.X = 88.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnStreetViewWrite: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 112.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'WRITE'
+              OnClick = btnStreetViewWriteClick
+            end
+            object GroupBox33: TGroupBox
+              Position.X = 24.000000000000000000
+              Position.Y = 168.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 5
+              object RBStreetViewTag: TRadioButton
+                GroupName = 'StreetView'
+                IsChecked = True
+                Position.X = 56.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton4: TRadioButton
+                GroupName = 'StreetView'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object PhoneTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 54.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Phone'
+          ExplicitSize.cx = 54.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox34: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Phone Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label40: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 34.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Phone number:'
+              TabOrder = 0
+            end
+            object PhoneReadEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnReadPhone: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnReadPhoneClick
+            end
+          end
+          object GroupBox35: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Phone Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label41: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Phone number:'
+              TabOrder = 0
+            end
+            object PhoneWriteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 104.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 385.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnWritePhone: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 49.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnWritePhoneClick
+            end
+            object GroupBox36: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 65.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBPhoneTag: TRadioButton
+                GroupName = 'Phone'
+                IsChecked = True
+                Position.X = 40.000000000000000000
+                Position.Y = 32.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton5: TRadioButton
+                GroupName = 'Phone'
+                Position.X = 240.000000000000000000
+                Position.Y = 32.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object ContactTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 62.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Contact'
+          ExplicitSize.cx = 62.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox37: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Contact Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label42: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'vCard Info:'
+              TabOrder = 0
+            end
+            object ContactReadEdit: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 177.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 397.000000000000000000
+              Viewport.Height = 173.000000000000000000
+            end
+            object btnContactRead: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 232.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnContactReadClick
+            end
+          end
+          object GroupBox38: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Contact Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label43: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Name:'
+              TabOrder = 0
+            end
+            object Label44: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Company:'
+              TabOrder = 1
+            end
+            object Label45: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Address:'
+              TabOrder = 2
+            end
+            object Label46: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 128.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Phone:'
+              TabOrder = 3
+            end
+            object Label47: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 160.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Email:'
+              TabOrder = 4
+            end
+            object Label48: TLabel
+              Position.X = 16.000000000000000000
+              Position.Y = 192.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Website:'
+              TabOrder = 5
+            end
+            object NameEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 6
+              Position.X = 80.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object CompanyEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 7
+              Position.X = 80.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object AddressEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 8
+              Position.X = 80.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object PhoneEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 9
+              Position.X = 80.000000000000000000
+              Position.Y = 128.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object EmailEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 10
+              Position.X = 80.000000000000000000
+              Position.Y = 160.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object WebsiteEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 11
+              Position.X = 80.000000000000000000
+              Position.Y = 192.000000000000000000
+              Size.Width = 409.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnWriteContact: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 232.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 12
+              Text = 'WRITE'
+              OnClick = btnWriteContactClick
+            end
+            object GroupBox39: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 288.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'GroupBox39'
+              TabOrder = 13
+              object RBContactTag: TRadioButton
+                GroupName = 'Contact'
+                IsChecked = True
+                Position.X = 48.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton6: TRadioButton
+                GroupName = 'Contact'
+                Position.X = 264.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object BitcoinTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 57.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Bitcoin'
+          ExplicitSize.cx = 57.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox40: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Bitcoin Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label49: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 34.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Bitcoin address:'
+              TabOrder = 0
+            end
+            object BitcoinAddressRead: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label50: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Amount:'
+              TabOrder = 2
+            end
+            object BitcoinAmountRead: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label51: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 4
+            end
+            object BitcoinMessageRead: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 112.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 81.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Viewport.Width = 373.000000000000000000
+              Viewport.Height = 77.000000000000000000
+            end
+            object btnBitcoinRead: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 192.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'READ'
+              OnClick = btnBitcoinReadClick
+            end
+          end
+          object GroupBox41: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Bitcoin Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label52: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 89.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Bitcoin address:'
+              TabOrder = 0
+            end
+            object Label53: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Amount:'
+              TabOrder = 1
+            end
+            object Label54: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 81.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 2
+            end
+            object BitcoinAddressWrite: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              Position.X = 112.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object BitcoinAmountWrite: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 4
+              Position.X = 112.000000000000000000
+              Position.Y = 64.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object BitcoinMessageWrite: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 112.000000000000000000
+              Position.Y = 96.000000000000000000
+              Size.Width = 377.000000000000000000
+              Size.Height = 81.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Viewport.Width = 373.000000000000000000
+              Viewport.Height = 77.000000000000000000
+            end
+            object btnWriteBitcoin: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 192.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              Text = 'WRITE'
+              OnClick = btnWriteBitcoinClick
+            end
+            object GroupBox42: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 248.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 7
+              object RBBitcoinTag: TRadioButton
+                GroupName = 'Bitcoin'
+                IsChecked = True
+                Position.X = 48.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton7: TRadioButton
+                GroupName = 'Bitcoin'
+                Position.X = 264.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object SkypeTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 52.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Skype'
+          ExplicitSize.cx = 52.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox43: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Skype Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label55: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 34.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Username:'
+              TabOrder = 0
+            end
+            object SkypeUsernameRead: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label56: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 74.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Operation:'
+              TabOrder = 2
+            end
+            object SkypeOperationEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 3
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object btnSkypeRead: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 112.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'READ'
+              OnClick = btnSkypeReadClick
+            end
+          end
+          object GroupBox44: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Skype Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label57: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 34.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Username:'
+              TabOrder = 0
+            end
+            object SkypeUsernameWrite: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 1
+              Position.X = 88.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label58: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Operation:'
+              TabOrder = 2
+            end
+            object SkypeOperationWriteCB: TComboBox
+              Items.Strings = (
+                'CALL'
+                'CHAT')
+              ItemIndex = 0
+              Position.X = 88.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 3
+            end
+            object btnSkypeWrite: TButton
+              Position.X = 24.000000000000000000
+              Position.Y = 112.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'WRITE'
+              OnClick = btnSkypeWriteClick
+            end
+            object GroupBox45: TGroupBox
+              Position.X = 24.000000000000000000
+              Position.Y = 168.000000000000000000
+              Size.Width = 465.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'GroupBox45'
+              TabOrder = 5
+              object RBSkypeTag: TRadioButton
+                GroupName = 'Skype'
+                IsChecked = True
+                Position.X = 40.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RBSkypeReader: TRadioButton
+                GroupName = 'Skype'
+                Position.X = 240.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object ViberTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 48.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Viber'
+          ExplicitSize.cx = 48.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox46: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Viber Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label59: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 0
+            end
+            object ViberRead: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 145.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 397.000000000000000000
+              Viewport.Height = 141.000000000000000000
+            end
+            object btnViberRead: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 200.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnViberReadClick
+            end
+          end
+          object GroupBox47: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Viber Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label60: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 65.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 0
+            end
+            object ViberWrite: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 88.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 145.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 397.000000000000000000
+              Viewport.Height = 141.000000000000000000
+            end
+            object btnViberWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 200.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnViberWriteClick
+            end
+            object GroupBox48: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 256.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBViberTag: TRadioButton
+                GroupName = 'Viber'
+                IsChecked = True
+                Position.X = 56.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton8: TRadioButton
+                GroupName = 'Viber'
+                Position.X = 264.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object WhatsappTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'Whatsapp'
+          ExplicitSize.cx = 74.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox49: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Whatsapp Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label61: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 0
+            end
+            object WhatsappRead: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 88.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 161.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 397.000000000000000000
+              Viewport.Height = 157.000000000000000000
+            end
+            object btnWhatsappRead: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 208.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'READ'
+              OnClick = btnWhatsappReadClick
+            end
+          end
+          object GroupBox50: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Whatsapp Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label62: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Message:'
+              TabOrder = 0
+            end
+            object WhatsappWrite: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 88.000000000000000000
+              Position.Y = 32.000000000000000000
+              Size.Width = 401.000000000000000000
+              Size.Height = 161.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Viewport.Width = 397.000000000000000000
+              Viewport.Height = 157.000000000000000000
+            end
+            object btnWhatsappWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 208.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'WRITE'
+              OnClick = btnWhatsappWriteClick
+            end
+            object GroupBox51: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 264.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 3
+              object RBWhatsappTag: TRadioButton
+                GroupName = 'Whatsapp'
+                IsChecked = True
+                Position.X = 48.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton9: TRadioButton
+                EnableDragHighlight = False
+                GroupName = 'Whatsapp'
+                Position.X = 256.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+        object RawDataTab: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 74.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          Text = 'RAW Data'
+          ExplicitSize.cx = 48.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GroupBox52: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 24.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'RAW Read'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 0
+            object Label63: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 42.000000000000000000
+              Size.Width = 33.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'TNF:'
+              TabOrder = 0
+            end
+            object Label64: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Type:'
+              TabOrder = 1
+            end
+            object Label65: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 57.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'ID:'
+              TabOrder = 2
+            end
+            object Label66: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Payload:'
+              TabOrder = 3
+            end
+            object TnfRead: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 4
+              ReadOnly = True
+              Position.X = 72.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object TypeRead: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 5
+              ReadOnly = True
+              Position.X = 72.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object IdRead: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 6
+              ReadOnly = True
+              Position.X = 72.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object PayloadRead: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              ReadOnly = True
+              Position.X = 72.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 129.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              Viewport.Width = 413.000000000000000000
+              Viewport.Height = 125.000000000000000000
+            end
+            object btnRawRead: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 280.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 8
+              Text = 'RAW READ'
+              OnClick = btnRawReadClick
+            end
+          end
+          object GroupBox53: TGroupBox
+            StyledSettings = [Family, Size, FontColor, Other]
+            Position.X = 536.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 451.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'RAW Write'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TabOrder = 1
+            object Label67: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 33.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'TNF:'
+              TabOrder = 0
+            end
+            object Label68: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Type:'
+              TabOrder = 1
+            end
+            object Label69: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 25.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'ID:'
+              TabOrder = 2
+            end
+            object Label70: TLabel
+              Position.X = 24.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 49.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Payload:'
+              TabOrder = 3
+            end
+            object TnfWrite: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 4
+              Position.X = 72.000000000000000000
+              Position.Y = 40.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object TypeWrite: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 5
+              Position.X = 72.000000000000000000
+              Position.Y = 72.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object IdWrite: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              TabOrder = 6
+              Position.X = 72.000000000000000000
+              Position.Y = 104.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object PayloadWrite: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              Position.X = 72.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 417.000000000000000000
+              Size.Height = 129.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              Viewport.Width = 413.000000000000000000
+              Viewport.Height = 125.000000000000000000
+            end
+            object btnRawWrite: TButton
+              Position.X = 16.000000000000000000
+              Position.Y = 280.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 41.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 8
+              Text = 'RAW WRITE'
+              OnClick = btnRawWriteClick
+            end
+            object GroupBox54: TGroupBox
+              Position.X = 16.000000000000000000
+              Position.Y = 336.000000000000000000
+              Size.Width = 473.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Write selection'
+              TabOrder = 9
+              object RBRawTag: TRadioButton
+                GroupName = 'RAW'
+                IsChecked = True
+                Position.X = 40.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 0
+                Text = 'TAG'
+              end
+              object RadioButton10: TRadioButton
+                GroupName = 'RAW'
+                Position.X = 248.000000000000000000
+                Position.Y = 24.000000000000000000
+                TabOrder = 1
+                Text = 'READER'
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object Panel2: TPanel
+    Align = MostTop
+    Size.Width = 1228.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object btnReaderOpen: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'ReaderOpen'
+      OnClick = btnReaderOpenClick
+    end
+    object chkUseAdvanced: TCheckBox
+      Position.X = 96.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Use Advanced options'
+      OnChange = chkUseAdvancedChange
+    end
+    object LBL_ReaderType: TLabel
+      Enabled = False
+      Position.X = 247.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Reader type:'
+      TabOrder = 2
+    end
+    object txtPortName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 439.000000000000000000
+      Position.Y = 24.000000000000000000
+      Enabled = False
+      Size.Width = 113.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtReaderType: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Position.X = 327.000000000000000000
+      Position.Y = 24.000000000000000000
+      Enabled = False
+      Size.Width = 41.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object LBL_PortName: TLabel
+      Enabled = False
+      Position.X = 375.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Port name:'
+      TabOrder = 5
+    end
+    object LBL_PortInterface: TLabel
+      Enabled = False
+      Position.X = 559.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Port interface:'
+      TabOrder = 6
+    end
+    object LBL_Arg: TLabel
+      Enabled = False
+      Position.X = 687.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 33.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Arg:'
+      TabOrder = 7
+    end
+    object txtArg: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Position.X = 720.000000000000000000
+      Position.Y = 24.000000000000000000
+      Enabled = False
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtPortInterface: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 9
+      Position.X = 639.000000000000000000
+      Position.Y = 24.000000000000000000
+      Enabled = False
+      Size.Width = 41.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object bntReaderClose: TButton
+      Position.X = 952.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      Text = 'ReaderClose'
+      OnClick = bntReaderCloseClick
+    end
+  end
+  object Panel3: TPanel
+    Align = MostTop
+    Position.Y = 73.000000000000000000
+    Size.Width = 1228.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object GroupBox1: TGroupBox
+      StyledSettings = [Family, Size, FontColor, Other]
+      Size.Width = 593.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'NDEF Tools'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 0
+      object btnNdefInitialize: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'NDEF INITIALIZE'
+        OnClick = btnNdefInitializeClick
+      end
+      object btnEraseLastNdefRecord: TButton
+        Position.X = 192.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'ERASE LAST NDEF RECORD'
+        OnClick = btnEraseLastNdefRecordClick
+      end
+      object btnEraseAllNdefRecords: TButton
+        Position.X = 376.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'ERASE ALL NDEF RECORDS'
+        OnClick = btnEraseAllNdefRecordsClick
+      end
+    end
+    object GroupBox2: TGroupBox
+      StyledSettings = [Family, Size, FontColor, Other]
+      Position.X = 592.000000000000000000
+      Size.Width = 633.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Tag Emulation Commands'
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TabOrder = 1
+      object btnStartDedicated: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'START DEDICATED TAG EMULATION'
+        OnClick = btnStartDedicatedClick
+      end
+      object btnStartCombined: TButton
+        Position.X = 232.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'START COMBINED TAG EMULATION'
+        OnClick = btnStartCombinedClick
+      end
+      object btnStopEmulation: TButton
+        Position.X = 464.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'STOP TAG EMULATION'
+        OnClick = btnStopEmulationClick
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              02A8494441545847ED96CF6B134114C7DFEC6E9AC55689485194F660557A5141
+              A4B6410D497A10054FD68B0751542CF82B15BC965E85A4D67AF60FA8370FE2C1
+              50E38FD078D48BF8EBA054940A06B590369B19E7250F4493ECCECCEAC97C60D8
+              F77DF3E6F1F6CDEEEC4287FF925C69742F0E92A1B0E81A0AC1F9380E92A16074
+              35667A3E11AB012CA26D036CC9240BE5FA8421A13B245CFBA4ED3A6B70A04D6E
+              634217245B7C9ECCDF6C534215945D482565198324256CB0E1332754419668EE
+              482B9F0EC60FF5F55262D3F267E77DAC1722E4AA535E826AF746AFFFDABEC227
+              726961DCA10877CEFC590C823E9C23A98D5141737363760DBCB3249BC0398C21
+              A98551418B7D5F8ED8E0F4936C02E73086A4164605716E053EB82A31ADD07EA8
+              73CFD25BD9B2F71A5CC7FF662A1E17DDCEF689A1FC3BF228A1DF210FCE051683
+              600CC66AA2D5A1997B87A2ABEB573F38C07AC9E58B0762A9EB6B57DFE5C3F757
+              C8158856876AB1EA31D562108CC5352495D0DB32C1F51F54CD35CA5B962DA677
+              5A0C9E93D4820BD875359E7F41D217E50E59208CBF513A6B953A746B3ED1F343
+              9E8751D759472E2D562ADEB71EF9F37621599069FC51EA50356A9F302D06C1B5
+              9883A42F8A5BC6FEC2FFB25A8EC082669E26E3726377933447E6A8E70A20B020
+              CECCBE49AD50C9E55BD06C29BD41DED918C9567802E08E3C328771346C7940B7
+              43E6AAE7F4C1B7A0AAE0A7E4C56DA85F54E48F2108C8328F0D4C8CE48F67461E
+              9670A08D3E9CABC734E352CEB6B47DED8500766321FD4A9ADB1A1EE903782B17
+              DC8C54BCDB41AF301E1555D7392DD75C926B06C88DBCB9329CDFC118A66BA66D
+              41B34F46377BB67829CDB51CE091C5C574397EE0EE149B92529D493169C58A8F
+              8F728B65E4761C94AEEF4E8D0D5EDCFFE0632342836C3135942BA6F6900C0DE6
+              C29C243B74F80700FC04DA34D1D12E83008D0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\navi_icon.png'
+          end>
+        Name = 'navi_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0251494441545847ED96CF6B134114C7DFDBACB152C410547AA82082FF41A4B6
+              3DC458113D8BB4E04D0FD58B9220DE4AEC5530A19EBCB4E0416D0FE2C55F076B
+              DC435A8BF6E64D10510F62832CA858D3CD3CE7CD8E92509BEC4C5A10DC0F0CF3
+              7D3F6679FB66F607C4C4C46C31A8676BCA8B23A3729A0D2D18CB0FCECF696D85
+              A3676B08E0A2962DDA96AE3A545A3A9641412FB5A920070F15069EBED2A6315D
+              75081BA43A4202967934FB6CB1EED0B5A56CDF77F1E35D0A766E270AB70A116E
+              F8F0F567AFB363FF9501EF934A34C4BA436E2331CEC5C06A5017C9E02E0FD6EC
+              E3984E33C6AAA0E2EBD34914785E193DEEC3CB19AFC68335BB38C6392A6E8855
+              41BBBED54621017DAC09E196724AFE68195339165815243BA0CE4C00B4D2EBFA
+              8F9453C29A7DAC7FE798625CD0543537244F6F86B54B78673CB3BCA60212D6EC
+              5386CC51B986183F65A56A6E161D476F87B84D846F421D824807E57D9E614D42
+              CC15862B632A1011A382A65E64FBBF7C76DFA6F6C036ED6A8BBF026BE9BDC181
+              4B87BD8FDAD511A32D13E45E885A0CC3B9BC469B9188DCA16225DB934ABA1FE4
+              2DEC96EF1B01C9C42970D0D7E15604A5A0DEB8275F030E08A8F9F560DF64CE5B
+              D5D1B6442EA85C1D392B8B990E2DF1243F583919EABF535ECC3D961B70421902
+              CEE587E76794EE40F42DC3A6AF3A3A37B5DC90969CA6B59D8854D0F585E36902
+              BA4F4457A539D1FF3EFD208C6C8CCE99E035BC96AF114662BAA3EDA196BFA747
+              64CBB3DADC1410D193BFB9CFB5B98EB60595168E16E505F8DC6C1A7CA60A43CF
+              26B5B90EAB8FEB56F2CF6D594C4CCC7F06C02F645DD0A9446875A40000000049
+              454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\text_icon.png'
+          end>
+        Name = 'text_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0148494441545847ED97B14EC3301086EFDC14553090B5BC062CB050C17380C4
+              C40C1B0CA4B07483990DF100BC01D089095E838EB40395A0ADAF39EB8A302D38
+              454A9C4AFE24CB977FC9175F2CCB1058345066C3F5F37AB53F889B4074008875
+              89F381A84308372BD55E72B8F132901494CC86F78F3849A7D3DC6598F41D0878
+              D2FF5CBD90C460096935DC93B2300847FB521A2CA10A446B521606FE78A72554
+              06CA2DD4858EB5EB7C105AE6627185B4D66D226AF2E05AE2B97317998510B17D
+              BCF570CE836B89E7CE5D94AE65D636BF7ADC1E412D9A29C9CB3EF9D2B40D0DA5
+              54E33FF92C8E36EFBF3C320BE5C977A1D2B52C08B908422E2CA1EE5B144E7B82
+              E1AB9406EF4248955B290DFE84F81A04D45A5EEA9D4962B0FE99E46E57C7753B
+              E3D39A0F4879CC9D3F57A86819E657211F328C253469972F19666A857CCA4C71
+              F9B4C377FB40203B006384EEA4BC33C349BD0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\sms_icon.png'
+          end>
+        Name = 'sms_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              024B494441545847ED974F6B134118C6DFD9494594E2521189B65F408F29B615
+              414AC06BBDD89B054FBDF8AF4510058DE841046D6BF5D29BF4580FEA5508BD48
+              D38AF914AD160FD69662B16D76C779C6376167DD35DB98C41EF6076167DEDD79
+              E6D9779F242CA5A4A4B418C147C3CCA75CC7D6AEFB8094BA424264B9DC1A945A
+              55825E1DEED8288CF69677B94A0E1F0D3FB6DD823EDC6DB919A0F71024EE6CED
+              1C79C8158365C8772A9779D83694F0467868B00C49CA9CE0A1BE902E92EF2FF3
+              B479684DA3CD88C09EC0321464BCBFF86E476D9F564453EBB4EA71B961A0012D
+              68429BCB7F6019D28BAC90DF3EB7B0393E501CEB12C7FB944F652EEF19AC8506
+              B4A0C9E548623BF4AC947FF3F4E3851E8C6FF4CF97BB3F77F5295237F5F4AF82
+              2136B1066BA1810234A16DCE466075A4503A5571292B790A2078AF7BF9E8CBE1
+              E1D7E6B1415078DEB4BE935A0EA2F089DE2A29AFDF3AF3DEE4706EEE925CE9F9
+              76557FB31EE969276A55C6068A351FF50C19D07229FDD1EA5D8289C5FC90F0FC
+              17E438A68B35105AE95C0BE6E4F9E260CEF39C19E1508E4B164143D623737F1E
+              B30C5681D09AFABA3451CA4F3EF970D6DC5D38F451A1C5B55883B57166C25806
+              26E7CF7B7430139B2B434C07704CD4C108621F5922434C38235592662C48530C
+              31B5D0631217DA7AC466A8013AB581A995936B4BF8608CDAEF538D61195AFF9E
+              B13A961404366968EBF1AF1D6A3AA9A17AEC6F436ED6FE19F81FECEF0E29AA7C
+              E161DB08EF6919124ACEF2B06D84F7B40C1D3AB0715FFF153CC62B0A975A075E
+              83F45ED8932B2929296D80E817A2EF00C78D9FD9F50000000049454E44AE4260
+              82}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\email_icon.png'
+          end>
+        Name = 'email_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0304494441545847ED964F4854411CC77FF3769FAEAC504150A70A3A54374121
+              D6AC70494A102ABA055D95284C31E956744D4C0F511474F21C1A78A8CCB5A2F4
+              5082870E6575888AEA22D6FA6775DFCE345FF76764EFEDBC79DB21223FF098DF
+              F73B6F7EEFCBDBDDD9A175FE35048F91E8996A4ABA8B85E352AA16E138B579A2
+              ADF05DA22F4ACA49C711C3F9AAD86077CDC8FCCA8208440AA41489FE89746BDE
+              13975D97B6B01D483E4F5FDDB8BAD491CADC128214DBA15807BA3676B07A2911
+              1F70888EB16585241AAACC79A7CE363E9E63CB8855A09B2F6ADDB9FCC6873ACC
+              01B622A1433DA976670FB5D54DEA4FD78C7E46380BCB1BFACB0D03B0163D581A
+              097D437D4F9B6A28BF3C4989B855F892E43C496E456D67C3C8143B81843F2426
+              2F868751AF8A9701F440AF108C0FC2CF5B0FCD45E5474AF9C8937247672AB307
+              176A783C1D4433F72C893190B320F7EB2151546BD1BFE37732196FE9DE37F69E
+              2D420D0F736CFD4E827B96C4184838B48D4B1F8AD48DA08D0F1EE658FA30F504
+              E6404A6DE2D2474C8AD75CFA30CD91549BB90AC418482AF1814B1F0547EDE2D2
+              87694E3FF11B57811803C514BDE1D28720713AE80B0A0F732C7D8882F396CB40
+              8C817295627A963E1758AE416F603B9D796FB8E759E376B608353CCCB1B506F4
+              92C279CE3290D08DB177227DCF217198650956F720B1BB38062349DDEF4A658E
+              B00CC4F886805062804B0308620E036C7A85064A56540DEA215B547F44967B19
+              090DD45637BCA0CF41D759960D7AA017CB928406028A62579672DE779691C15A
+              F46069C42A5057FD8399CA44BC8F6564B0163D581AB10A04960B8BBDD2A38F2C
+              ADC11AAC65198A75A00B0DE359BD53B6B3B447AF59596B89D511F657FAC6D343
+              24C451966694BADB599F897406B77E43ABE8F3F11922CFE2FBE0CD14EF8D46E4
+              405DF5994F82E2AD2C4B827B702F4B6B2207021DA9D13BFA10769BA50FCCE11E
+              9691282B1048BA55EDFABFE925CB9FC0C31CCBC8941D68650777C4891CFEC419
+              D4F06C76E452941D089CDF3B3A9D207512C70A5CA8E1F1F4DFE3EA44FA1C2E96
+              EBFC4F10FD00F5541F253249729D0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\geolocation_icon.png'
+          end>
+        Name = 'geolocation_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0391494441545847ED955D68544714C7CF997B13434C740D18570B2288502414
+              11A1269B6D9A4D22D60AA220141FDA3E148218C96E200A969284D242B1262B8D
+              48C0879287BE14C43EF851B3498CC96E7C087D694A5E44D007A309E86AB22566
+              E7CE71667792ECF75752E8C3FE60B973FE7367E77FEF9C732E142952E43F06F5
+              356F06A68E972FF2D03E466C9B00518EC810094202C56B51663EEE3C3014D2B7
+              E645CE86AE3E3CBADD32974F204223E758679AB0474FA5E32900F901D8032EF0
+              8F4EC7D09CD63392D550DFA4EB3321F03C63D0224333AAE60D07103E42D6DF71
+              78F8B6D65292D650EFA3C623C4D96566C0475ADA20C4DF208C4E8FC3F7A716E2
+              4832E49D74ED20C0EB727832AA64C75AE2FFAAAB51669647841C1000B72CC6CF
+              5EF878EC859622C41992665AC8C24130C0AEA54438108C10D0B05CFA973CC027
+              A5213ED7D638B6A826FB471B2A96379BD5CCA2BD44E004C4CFA57C50CDA5221C
+              869766A9F8B2E3F0E87D2DAD19EA0BB85A83F8E29A0D761A5A5A85803F27307A
+              CD70E960FB27F7E6B59C135702AE0FE42E5F20581D08E62E2DAF128459CB46F6
+              739EBA910115470C79279BEBE5538FAB71020BD2CDF7C12D55577B6A7E5FD65A
+              41744D9F2EB5BD7DD52E77FC4E869551750D0474BA6B7D13AB6FA837E0EA42C4
+              6E1D4AC88F9C9D713B7DCFB4B02178C79B7793297E93161C5A0222EAEEA81BE9
+              51E3B81C5A3145B2EFBD59E26D3D8D63B25C9389F6A4F031D993E49B15760456
+              AD74399E936399A4E4E7C2B893AEF7748D36985BCBCC7EB9796BAC19459C2185
+              D7DFDCE476F864D226136905C4BE7D3B0B4EDBCEE4B5B10467816C769800C21F
+              D29578AABD32FEE90A5E7F4B8D05FC17C6D8A75ACA131A4361B4B91D43D35A48
+              4B5643B24A4E5A88832500155A2A8830C06209E0579E5ADF4D2DA524A3A1BE89
+              A6DAE01CF8531D4F1016DED960F3B83C9229D94823B98240D58074280821A70D
+              2A37456E8C21728CD5E0F0D40F4F6A2989AC6F28B1FA64679C37097E2C7967DD
+              58698889A80619DE647CC3112E9980DBB51C574DE9C82987564C094137392D7D
+              7DB13EB0A0A732F2D3445DA58965BF3286A772319317D10ACBED0162516BD45A
+              1D6625EF0D12F9D97FE4438389FD3A9C91493BA3C70551B0A12B81A6A332812F
+              33C01A2D4521F847EA9D9EDA91BB5AC98B820C65AA3E85AAA6AA1DA2BEDD311A
+              D052CE307DCD0B55B65BED943641D55C216614EBCAA1E40F726EA59D89752775
+              ACA90D2FED4251A6D44F87458A14F91F03F01EB42965B731E6537E0000000049
+              454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\wifi_icon.png'
+          end>
+        Name = 'wifi_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              05BD494441545847CD985D6C54451480CFCCBDBB2DADC05684DA4011426B30F2
+              A3A136DD155C4B51107D05A231FA40C25FA2B0ADC42724C8239682246089266A
+              8C06886F9252E98F0DD0ADB51081261259035A48D312E9526C6977EF9DE33977
+              676F5BFA8BB64DBF64B33367EECC3977E69C333357C0282082286D2CCA1536E4
+              4901CF2240AE40CC46C44C90D2277AACF46887E9E1677D19561C53CD2E502A2A
+              846843215A688408A26846039A4AF2ABAF0B0134C4F00C69D0C9931B8C967977
+              5F11089B84C0B52044966EFA7F20B692719528E044F6ADC7CF6EDC78CAD62D2E
+              830C2A0B176D52B6DA2F0D99AB451302E9B84E3AF684FCD527B4C8C1358897E6
+              5078F567341B5BB46872403CBECB5FB32DB994AE41A5E1C2F512E4695D9D6470
+              7DC85F53C125E9D4098172912E4E3AE45739BAD867D054612A1B242F455B47CE
+              11134142A7BCA4AB7D061507CE5EF03D091F46A175506E98285817EB64DD5A34
+              70C94281EA03192ACBAF002B2772B6786CD6C1BA58A7163B0CBB751C0AAFC955
+              A8365008BC764F76BDE083E929BAE93F1185FBBD3355FA2F94E72AA490A776F9
+              ABAEEBA601B80651527C5B213C96EEBDF7C5D6BC8B712D76D85B1B4CCDF09A4B
+              6DA99650AECAA1B9CB267126F5F651391DD072F63210669C645D248B52AD8DCA
+              2D0A54C450B2B923665DDD5758D7E33CA7296F5AE1E98ACDDC4C7BE43F941CBF
+              61996BD0C1FAA2F7285B7E6A5970D33045B9ADECEF76BF58FBA76E1E570E5C28
+              7CCA90C69BB6855B4D1316D02EF17E71A0FA08B70D3248579D75F665A9664A5A
+              B5F458A34479B923168B3CFC96A391985D6F8E126A39A5C07CDAAC0BA3AD7289
+              2FAB4FF79006D1A6BA9DFE8E266AC362D1D1A295FCE036FDEEF0D2D0CEDD4DF2
+              E4127BE8849046A3D252E26CFACDA5230A9F14CC44F3B0ECA04DF61817FA1914
+              5C40FDAE50717A423269DCA7F75C16F2D7DDE48A1BF62C5042BCCA3EA445130E
+              EB629D49631877869294D6174C13226D8B50F60E90E6D35A3CBE28EB7794C651
+              C4EEE3258186075AEAE01A74B861DD8C9D05673A75951D4D9485573F4FC575E4
+              88AB2C102B4C10B313AD8F860578C704BC4801724EA1A8280954FFDAFF28DB5F
+              B76B9013658045F4E0479413D89706C0061E680C667A952707959D4D4E9D4967
+              E60C766204F4F23302448C9D9CCEDC1DD4A14D48A32526E391DDF9756DFD0D48
+              52DA50B85CD8F263EA58356CD873B8CFC8827312F15B29EDD33B0BEA6EE947C6
+              85C30DC1794A19AF93EFBCD5D90AAB38FCC7948718C7B8392A220D6804CA4334
+              13D7241A37BCEAC1EDED2BCFD3CD62F05B333C9BC7CEAFF4C5E4B4B94AD80B69
+              E61603E52165437E67BBCCE99F8398A1F3507DD13B54FB4A5747A7C78A81D7EC
+              B4A5D52D81B60C4281E531949906316B06A49ACE328E0984776993FD9A8B6ED8
+              5B69F27B1AF2AAAE8E0E2B94F08401E67C7AAB45FCE332CB1EC5189AB52B09DD
+              095C83763F77B60B7AD44B742EF892DE5E69F1C4413A58978C5B4147B766C05A
+              26290BAF7906516DA3C60D144DE373494C429745527B92C62D0FF9AB7ED35217
+              D7A0D2FAA2A5B2D76A0915D6F1D1C1612FEE95D3EBCF2F3724ACA275CE23C75C
+              4293CA3784B16E2FB42DA808054433696AB2159CBB1F5879799FD8E7AE40596D
+              D0A752CC6CCA4D8EBBB8067194D902F718089F20989F97047EBCAB9B06908CA0
+              5EE199A34C23C3B0219DFA39E7210345DC36A04B5A76470AC6DB478AC4233F17
+              CD8ADBB8D916F001F5DB3F5AD8F790E64A1AE90704FBA7627FDD1FC30D3C56F8
+              450E8683E4FCC6CBA4F40D5AB2B5244ED56D63CB4349EC78EFDF8699720511AF
+              09216ED07CDFA68EED12E19E3255B702E984BD04E591964C53026692F5732862
+              E6529F85D467B16DF52E333C29B39C011F624883A6DC55BAB8A0B6824C3DAEAB
+              9306CD64F9AE829A33BADA6710FB482850B3957664FE1C33E48D603C611DACAB
+              D85FED7EF960DC25EBCF94FA60F5301C1D871BD6F091238FCEC7948790AF41F3
+              47FAA427D0EAA024D04EA3FF452A22740E6FA6A348D3CE82AAC8C8D10AF02F83
+              ADB8343C3FCCCA0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\database_icon.png'
+          end>
+        Name = 'database_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0306494441545847ED974B4C13411880FF995D284808F8C24734265E3C785023
+              11A946A0B50663BC9870C3C4183DFA024D8C97D29B8A168D89171F07E1448C67
+              22F2520189989828072F6A02277C04C2A12DECCE38FF326DA0BB2DFB2AF1C077
+              E8FEF3CFFEED97D9BF332DFC6F10792D18F7474E6CA084D503E77B8C0421DF18
+              A783ADC1D77F8D71160513BA375EB7892EA8B76761AEB912CA03326D300373A9
+              0A28EF6245DACDEBD543BF65DAA02042F1B186BD7C9EF6501576C894254C8329
+              52CC1A5B6A0626642AB7D083D150847352CD8117CB545E54AABCB87CB8F7C7C3
+              B78D9B9992FA0494EE9453F9616C92EA8183578EF5FCC2A1A5507C24DC490834
+              CBE1CA68C959A6E8DB5A831F121DA3E12722736171C2364FAFD5F65DC4801AC3
+              25E0CA38921170B5E425CA3C1A0B6F14FD7156A66D8335588BB149081F930C1D
+              C0BFE0ABCEA03EBB81ED8035588BB159C866CF2C83909F78E11C761B6317A46B
+              4D426EA03AE832F48C2F424C81ED7815BDF7DD48B8205DEB8B9078CE87F0A250
+              18C44DCFC839006BB016635F840868A7A30375EAA59ABE3FA2413B65DA365883
+              B518FBB342A0565594AAE731A20B45B770B333D276C08D116B243E098955D220
+              D63E1CA9C21D97AB70128F05399513BC07EF4DEFD2886F42A0C05695EAAFBABB
+              9B143C9B78A97680033CB3EA29CCE11CDEB3F41C434C47477C24142584B4C9A1
+              2338E76D2DC1FE981C1A78FEF9E156C84AC60DBE08E593897E6D2AAE9C9B16FB
+              14D922568653A24FCF24612AD630A4C95B96E159C84AE6F1BBA3EB934AE01C10
+              7E8A00098A54E9E24C868468E961CEE99D9660DF1B9933F0D4D4D932ED9F2365
+              F1D1D0DD14D527C5CE1B17326191CE9641448E1E17EF70448E33B816CA96E978
+              1FD9AF26D88490B801745D994C3BC6959065CF28DA73F1BA6B71E01EC742391B
+              38C9F6C9C8138E8472CA2025AAA77E4C63FB4DF2CAF8882DA1D5924156145A4D
+              19C42424BEB6F3322CB8CCD2CF4A631212A7F047E3BA0A2B43081F9761069310
+              6EE58CF333859611FF32BAAED6F6F7CA6106CB7FAE6EC033508679C1C7842B63
+              25B3C61ADE01F807AE50503E75E7E63F0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\streetview_icon.png'
+          end>
+        Name = 'streetview_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              023A494441545847ED95CF4A1B511487CF1D8D09045AC19DBE48884D21BAA95D
+              88A54F504D7567933E4063FA004D5A70A18EFA0445E9A2BAD180A9D117D15DA1
+              160453754ECFC91CA6D426F7CE9D190BA2DF667EE77099F972FFE4C203F78E0F
+              ED896AFD6812F929AD5838F28C8D526A2909A9C4849824A4121562E24A8512AA
+              1F169F228292D2481C29A310BDB804BFBC66E378723584D4853C234B69857866
+              54E77A0532833CAE6494426C781EEC4815494A2B54CE375B24B32125A395429A
+              A1C1B3D48B38525A21A500CBB9BD798AAEDFE9A2957AF37CB703EAFC25C513BF
+              E34BD50F2766A4D462DC43B652DC7354F613C531BF43206CFEC817BE48A5C5B4
+              4903F8432C41B1E477BAB8B44CA7F492775C507E4F79946230C603DCF8992BBC
+              AEA99A272D2DA185985E52D7979DEF03A9F4C8CDCCD8CA3056424C9F99FA079A
+              ADF5B3DC93791B19C65A8831494595612209311A29970F011F06A9AD309EB2FF
+              CDDD5FB2DBDED4564BD64B868FBAC4BF32FDD2B947C7ADB52A56ADBE117A709F
+              99719D547A5932480EFED11D50B3B652A106F693E95E29887F9684F2CD6B86A5
+              868FBEB961A58C837432BD8E36F73C3C5FA4185CAEB47EAF86DBAD69A9B46885
+              6C65988F5F9FA501B39F2906972B222E55C6F7B7A5D4A2156AB48B05B8B89A95
+              92D1CAD046CE5C3DBEDC721C98925657E66D7EBF26A511AD5065BC7980E98105
+              92E27D62FE0756AA1C478631EE217AA10B434ED128E39391672419C628C4F04C
+              859009882AC38412B2218E0C93A8505C192631A124641EB88300FC06F06B4797
+              1AD756DC0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\bluetooth_icon.png'
+          end>
+        Name = 'bluetooth_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              05C8494441545847B5987B6C53551CC77FE7DCDB751AB77509CC0D2544141F21
+              3EA2736C0B38DA8DC71FC644C3500211CC507048804E887F6070461315D68D00
+              53E4152244C262F8CF88AC9D0BAC653C8CD1F802240181CD40A4DB406877EF39
+              FECEED6F97AEEB58CBCA2769FAFBFEEE49FBBDE7F13BE75E0677115FA77B3213
+              AC0624F300838961E8CBCA35722E830E274042CB7D59E19625C527FBA9B9C55D
+              31B4F1E8EC5C43461BF94D731164EB9CD24310A638CD7456E32D0D1CA654E60D
+              F98ECF2A6246F420007F9252B7257C19FAF3C6C01BDE72FF5EA5336A2866A63F
+              803FFB38A562DC340464C119097A5F346A4C7266EBB9746500033F335695F97F
+              C898A1E1CC4829B74980FABAF2C045A5B79E78CE712DEAAAE6021A408342AB11
+              826DFED2AE3A2667C49032230CA34D03788C5210EE029957082B702836516A10
+              BE63951359143A069992B068D809972A9B8E548D4B6A669C5C3E9C1985B7C47F
+              5672B682A40503593D2A43CA4C4493814433B945F00EAE9C2D941A96072FE47F
+              8343759524180C4AEED8903263B0FE213DA3CCD495F99B29755BE6CE6D3171CE
+              9C2689E5898DBD2343EB3B66142833C0F5472965997115C1B254CD0C2040DE4B
+              A1C248DBD0BAB60A5DE3E2403233B86C3FA7544A34853CF7F742F71324C1C495
+              96B6A17CA7B614BBB99C646C0217CADA74CD2804B0B52E28C2518FC1850CA465
+              689D5CC70D66AE26698166DEF39607BE2099328DA1AA377BBA6019C9183ADF99
+              561D6A087A4A38639D24153FAE2CF517335CAF4A3485AA2609295F94203BB010
+              1EB35A24A129E8A99111F3CB41FB9C847DABCAFDF3D2EA2174FF2C851658C8F6
+              0C98F9ACB3A2501A378EA3F6F5B2EE209A7FD96A94802FE8599C6806E7CE9F4E
+              3352ABE2740D15501883C3298A4033F56740CFCE53B19A17D893BBD777B82758
+              17095FB072218B985BE3CDA82D03346D46EDB423563D4ACB9060709D420B2E65
+              3E8538FC8E207E9D8B298B1C74F521C516D2848F12CD084D73BF5BF2FDDF944A
+              6E48153D5FA8727B63C8BD47CD0B4A636369173185946C2685B0A2F4BB5E1CBD
+              97D4718252D003D75E6D6CAB709104C6E11F0A156712CD288618DA706CE67843
+              93ED383C357879BE10F26BBA041187D68EA7BE0849085F81D71A8EBA9F26092B
+              CB023FBBC6C03E923874394EC8E62F9004CED93CECE7BDD8333B749355249A51
+              0C5A65CA0C37CD364C3E4C2910065CA89BE61F4F127C21CF6E06EC75928A739C
+              399E523DA40416BB0512D857D6154432B1DA5BDAB681E488D83D94CC8C3A5831
+              0DD692B2E0067F1FBFFA62CA628221FAED422918B3374B059EA9E3B78611B10C
+              351F9E9A0FA67928D18C746A4BF008B19B32162BA7B59EC75AB3300C5DB85AB1
+              198E9CA9193F59171502EC2DC582B1CB14A5846528A2399BE3776DAB679CDA5B
+              5881B753661058F40EE4CAC272AC43DE7B8095AC99D2DEADF2A819D6A1055623
+              02CD9FA4302598AFB3AA9809799C346D946CC9AAB2D66D944A192C7A6BD0D1A7
+              24B1E019E7FB4AA73F54CFEA05A54684A3195C4DB77015C9CD776866694F37FB
+              84A4852EB5F5E99851705C461E8A41CD0B9C471F934C99C650E5DB68A6198F20
+              F6AAC5A51DBC1A31D3DE74399E6B26520CB950F83BD692F8E23522CA0C0EF396
+              78337893A7B088BE52EF6E578F3769A126B51E0B9560FF5198120DA1CADA6466
+              74E970A77B63037003A4BD2CB19B27EDDF5F6D1F986E8732D3DB059BE3CDA85D
+              5B99593EB5F512A5D286EB12EC730BFE72FEC5F1FFCE21392CBEA39E65C9CC38
+              4DE6198D1905C7D2D142710C139AD4431CA921E0116279CF25B629D10CD7F551
+              F5CC006CE3B7B39DC275E33760B72637FE43B7E05017FFBA040F5C0FE019E703
+              0C172B7D0BF987D41D1EEFF307BB28312AACBBC495321DBF0EE1C79EE08AC84D
+              A3372B4B3FCDC0C881283C32F4D54A66CD28EC6EC7A198DF730576B9C6828352
+              23207E917AD6AC4C9A51D877ACDECFE415C84AF5128952C9C17D0E1FEE7672E6
+              9C9A69330ABB8706B05F97309803421487F9F5023C6845B1269C05260392CB1D
+              DE296DBF52F30C03F03F42C460F6D38011380000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\uri_icon.png'
+          end>
+        Name = 'uri_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              03DC494441545847ED985D68145714C7CFB933BB6EFD48A22012AC82D0AA181F
+              DA6AA889C1366E2CD1A2AD05538AA02F2D3E54699350B02F2D4B7D09E866A5D0
+              973EF854AA06C1070BDAB286B4E6032450A4460A0DA52D123494C662E3D6DDB9
+              A7E7660FAB93B95B4727233EF87BD839E7CC4DF63FF7FEE77E2CC243901D49BF
+              8104672585E57F2C713B3AFABCDEE1F4DB9C9E9C29164A773B5B07E6CDC48F80
+              92EB13C353410F2292A0AB7BD691847386D5D46CD21E22A87C190211F10702AE
+              E57477B90AA6411F697240E9150A9C46539B8209AF16EA330AE857D0CE8F7F35
+              378F6530A367FE2004D504CDD993178B70C375F457904C1EED6ABC3021E5AAC4
+              EEA1440296A1525D58B87DEDD870EB0E2957C52A686A02C874BDB94A293A6EAA
+              56813A931BDCB65E2A56AC43C6FE4164CF7CDAFF8A5B9352AF997FC4E554F9EE
+              3DD859BB48A9495522D40A6A15C22AAEBE0A05EF4D48B94969360B3ADDD974D1
+              4CA45642CDD4BD43E96FB865A0BB4B5A2DFB68F3773725ADD07BA9758DE7E86F
+              1D70574AE91EA5C2AD0F5B06179B07968A8F501ED244050943D1D9D2FFB3A3D5
+              6149FDF0D0F58CB6D54816203653930B57240CB01852450903C427C8C3D512FA
+              E0711A3FB0F1DCB4A401621194FBA16D258F738FA43ED83A5F4A682594A98F0D
+              6E3DA314BE2569057ECB3668D79D54E025781E5F425A3FA700D3A0A7DF01357F
+              8134ABA0812E2C4CDCDA7960E3683C43C673C3A8E379BFA307E3A8E9328BF99A
+              CBEFDAC4B09CF340D3BBFF4F8C21360F0551ED0AE68FE786B61E34F39C14033C
+              46410C623D217E9E1B693D514D5424419A60BBA7E125F0D48B00DE2676D50E24
+              3AC4AFD249F6D13FD2CC82DA9F1B497748E22392A9ABCDD486E3DFB72FD5EEDD
+              13DC2BAF4BC907EF6EF25D4D17DB24AD10DB907DB0E5FCA486E93D1C5E2F57FC
+              FC0BB841421FB17AA8BB79E40E7BA55F521F8509A895D047ECA6E645D4320500
+              D4D5C36D097DC42AC8ACFA7C692F67B3D1BF48E0239420DE4B2F923014BC8F4A
+              F196655F51AB014E9F295767412A2F910FEB5BD67B69DB0BE4E89D7C932D00CF
+              62A1F41E6FB802E279E938C262FF0624DED3F3D0202EE5EB9A2242630260A134
+              0BC2A75B3D0F1ABA9B0702BD6415941D4E67F8C62792C6417767533E2BB10FFB
+              9011354834B7F064C9E7A1F7AB89315805791EAD933032E6A0401AC6F8F3334A
+              D63CDFDD94FF426E59B17B6838DDC5DDC436B80F425ECC35F79CDA2B15E0ED46
+              165139BC84AC560AB69B9A39ADD451FDC71CDED080BF251DFAE9D0CBF93FCDBD
+              3058055563F6CF31539B5A1C732ACD0EB57520D2A999DA241433BBF2554E1C0F
+              26D23CD4D037F6500F148648826CD42D2A453A5CCEB9A0A83C618200FE03125C
+              4F589A79B7560000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\bitcoin_icon.png'
+          end>
+        Name = 'bitcoin_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              02E5494441545847ED974B6813511486CF9DB9B1110415F1B5511752114117BA
+              486AB5A6E9D2A51BEB421015B14A4D5A515051D185207DE06323D185882E5C75
+              21886D522B6D6C8B5B29828AE24EC4B62A363633F77AEECCC94366267D64A61B
+              FB6DE6FFEF0DE49F7326774E609145AA84D1B58894C0BA5EC79B516DA6A5120C
+              26F266EEC1B9FAEC4F5AF11D47A0CE6CFC1063F088AC1BA944347D8CB4EF6874
+              2D82093790F4623B5D03C12590ACD80E29C46A9281E00824343949D21543D316
+              361008FE91942B2180655D83B12D647DC759A125D3EF487AA3EB7B49F98E2350
+              FBAE816F20C417B2AE48903B49FA8EB36588D4583F490FE41809DF710D044CF6
+              9172239588646E91F61DD7403AD4F49839E337D972526722E9E378704AF2BEE3
+              1AA835F2FC070BF31EB205020FA3706F9982B1525B72863085DE1174188567A0
+              B648DF30FE9AD29609734DD38C3B960E18EF0A210CC405551D5BB378D750ECA0
+              B51120150325A22F47648D7E9F2C7E5A74DF1C8A6D24170815032924F0F3A583
+              92AFE14C7B76E34DD372DBFBCF8C81DAEA5E7C978CAB5619D602836D4BFEC8A7
+              97FB1BB8E57DC631A079D139DCD8C2242B3ED85240AFAE870EA8238296FE414D
+              9EDDC3F1D328B70A10A3DC8457ADF5FD1FEC5D6F661D48D1996DBCC618BB4856
+              F5F32D30637F223AF089562C28CC3D9447ED151B3C33C64D032639979FF1ABC7
+              4239E3ECA9D8C02FDAB698B165E524EB3297A494D7C95AED33401FEDC8AA19DC
+              C62B8C02EF7E25E7B0095503DA13F9303F62EF949853850A50FBBA51169F2375
+              663153B680AEB5A3758471036FEE0ADEE455B21673AA5081642473574A6D5FF9
+              98A2CEA989AF9A9A026615C68B79055224EB7A876A447E07CA54E1F05CB17E7E
+              152F67DE811427F70C8EABBF4462696877F135532555052AA0DE7BC968A64930
+              16C5523DC1A5297B67EEF812A8800AD6164D374F9B536BF1293F8C557B58791C
+              66EF4914A9BAE7B3E1F6487C9591875AA9412D4E30613C8FD6A930D8EEC70B31
+              D22CF23F01F0174177F2937B731DE30000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\phone_icon.png'
+          end>
+        Name = 'phone_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0192494441545847631805A360308089471C954118CAA508304169B2C1C4138E
+              C63FFF311D0561101B2A4C366084D2648109C79D5CFF3330AE05327921220C9F
+              1919FE071758EEDB0DE5930CC80EA1DE63CE51FF7FFCDD0264C21C0302BC2031
+              901C944F3220CB41FDC79D8B987EFE59CCC0C1C206154200A018480EA4062A42
+              122029CAFE03E367C271E76EA0AE62A8107EF09FA1B7C0726F2923301EA12204
+              01D10E9A79C698F5DB6FBEF9C0408D860A1109FE2DE562FD94986E72F6375400
+              2F20CA4153F6DBF3FC626359C7C8C4E00A152209FCFFC7B09BEDD79FA01CC783
+              5FA04238014107751F75156366F8B70DE8188AB234D05167FF323079955AEF7E
+              0515C20AF03A0854D8FD6366DA0164AA404428067798FEFEF3C8B7D97F17CAC7
+              00387319ACC00332A9E5181050215480620D212C051EB501CE02142384701478
+              D406380B501407E12DF0A80D7014A0781375DF31A77A4646C60628972AE0FFFF
+              FF0D4556FB1AA15C0C40765D462B30BC1C5468B997111B864A930546A38C1018
+              75102130EA204260D441A360148C8281050C0C0028F290F1B5991A1900000000
+              49454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\homeaddress_icon.png'
+          end>
+        Name = 'homeaddress_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              02D8494441545847ED974B6B135114C7CFB999986E6A45102C8220D68D501FAB
+              9A3EB09DA8B81004572A2AE842574212BBD2850F7055D3C42FA0F80DD475935A
+              A893ECC4C7C24745E8427722AE923273AFF74C0EB633B5B937318B28FD419873
+              EEE39CFFDCDCD7205852A8BA672150F754529C9A1E297FE4E29614BCCCB000FF
+              29A0C8E5D2F3CFB9B825F682BCA34381EF2C261D2541AAA9DCF8FC8782E7EE12
+              284640C9DD612314CB4E00B5EBE3735F498C4455163E36128063D989B9E5B08D
+              016B41C4C39ABBBFB18295A4000509F90EEAD2853E477075C80FF8160CC8C14A
+              20D4211203097FEAC6E8C212571B890433F17D64E27D32A9CA90809DBAEBB1B8
+              18621B0C2650C0710770073AAA924F2F7CE62A2BAC05290538505D7CA207F53C
+              171941C04BA56A46F7B1C75A50A9EA5E45840BECDA8370B1E8B9D7D8336225A8
+              E09DD80E8833ECEAD1527772E9F286F38FEAA80DBB5A14CE84312CB01284C23F
+              A71FFD4D2F143439EBB9B7D95D07D5511B76897E8E61C44E90C4336C86082126
+              1171750462501DB56137241E6323ECE610C25EB63AC73286D53E54ACBAB7F42A
+              73D8ED08BD20FC5CBA729FDD7F87C8083D7899399C4078DC68F87BB6F4398F72
+              47CA79FD66AA58CD286EF25734571F60B196995DA9FB575229E74BA0E0F2F458
+              F9153789CE2112A3251E4CF5395BB5D26CC9734F7355D7A098149B7250AE30E7
+              1AA293BAE10FB3D504E1005BDD231E3396332A287636E9FFC96AD2B7C3BA98B1
+              9C51413DC0A620139B824C6C0A32D1E382EABE642B44EF605D39C3D6B22E662C
+              675450CA79CB5613056FD8EA1EF198B19C114174F2EA0EAF1B75FFA77E8D5276
+              B4F28CABBA06C5A4D89483728539D7607556E9EBC727FD186A7A1DB3A4AF1FFB
+              D8DE10AB492D027952BFCDCDC8970423A57C41E5F4239B8B7F13F6D17DC31816
+              B47D9AC72F6B94303F5AB94B367D6DC42FFFAD3E97FE448F2FFB1EE03F10D462
+              F3346D7A36B42FA8D5E669D8F46C685B50ABCDD3B4E99901F80546941BF42483
+              F3770000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\androidapp_icon.png'
+          end>
+        Name = 'androidapp_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0271494441545847ED973D68144114C7DFCCDD8668500B9BC44E10D2A4533477
+              10E4028ABD58899D90CE7841C5EE3CB0100BBF6ACB6813924E14CD1D1C42A260
+              19043B2BB5530386E576779EF372CF23DECC6D66675D49911F2CF7DE9BF776FE
+              F76E6E7706F61A823F5379B036DB601316AAED269B4E64AD95FC998A10E2CE9F
+              8B43CE64AD7512F43F19FA933D5A9F3D87284E21E0C8CE6F878899BA34582B40
+              7485C00FD72BED371CFE0BABA087EBB545DDBCCBEC1602222C2E545B57D8ED63
+              08DAEE0C88D7EC168A003C3FD829630DD1CFC466E1D8E63205E935C366E1D8E6
+              CAF52F53801BBAF11723194FD045762FE68FBF20C4179B878E9EAC5756576E9D
+              E97CA38B6C8AD1186765C64F501CFE8C4AC9D5E6D45297237D28466394C3A14C
+              7809C2F2C85BEA08BB06344639EC66C24B9040F989CDA1B8E4D8F0EB9050936C
+              0EC525C7865F87E2EECCFDF767C7D935A031CA6137137E8BBA3C7A24484A4F1B
+              1B978CE708C5688C72389409E3D541FB17D7AD023D7324C84624A335F2031554
+              15A8A60431B59DB00BF4B21DDC23F97588E94D8CCB812A7FA58B6C5731C3C825
+              A808720B4AC2782B8EE1B3EEBFEE507E7C04854AC14B1430271375E246AD3376
+              73A675BC5E6D1FFB11C6412261526F2BF43E079F9358AE71C67D51ABAD5F200F
+              DE932278323FFD6A93A3A93C7E77E1B0C2E89AAEBDAD6BC738DCC77B5123C45F
+              64E9C0E97AA575D7550C41B95443B5740F0EA7E22448AAF2DCFC74FB23BB99A1
+              5ABA07BBA93809FADE8D57D9F4C6F51E4E829AB54EC8A637AEF7C8F5A4CE8BD3
+              A2A673139B85639BCB14A40F716C168E6D2E4350EF9CA49EB15B187450B49D5E
+              AD275762E7519A43FF84DD8ED2FBEC930F80DF6A42114ECE5515C80000000049
+              454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\contact_icon.png'
+          end>
+        Name = 'contact_icon'
+      end
+      item
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              08C3494441545847DD577D7094C5197F76DFF73E12127201423A602954FAE114
+              9D563E921C092139B4492C583303D34A3BC214C7A94EC997A24EA53174AC564D
+              2E69D569A7161D04A68656470A14311F84247749D1B633A61DB51618456D0C49
+              2E1F24F7F1BEBB7D9EF7F6CE5C72406AF9C3E9EF8FDBDB7DF6DDFDEDB3CFFE9E
+              5DF8AC81A97256A8EDDB6C778D0D5F2BC05C86D56C26B98B31992A25E864670C
+              0CFC9D040101A9413F30714E1B74BC5B51763C44F6D9E08A84BCFEC2A5526AB7
+              8394A58CF355D8E48C5AA2080C80746581A9FE6BF83F61CC008C85D221F52F1C
+              B43F69A6385891DFFE2F654A8A4B127AA2BBE80B3AE38F05D8C06618C812AE05
+              D025197402936F6A20CF0288FEA0111999702D0EC1C0C782BE59943ECE024187
+              53E7CEB9387036631C1723AE472FE64350ACC32E3A38F497A40EF757AF693D43
+              DF4C4752425EFF86F25030F29CDDA99BE8992735C3FE9B8A75C70794F953A1DE
+              77F33CDCD11DC208EF123687C306B0A32AAFF545658E6306216F77D177037CF0
+              0597CCEA8868C6D65D391DFF56A64B0263883D0CB5AC8ED5599EBA1C9A4E9564
+              093DB21F42C606F4D6F62A77EB3E65B29040A8B1FBA615928BD30264C768FAFC
+              4D752B0E8595E9B268E8F63CC7387C47027C8001DD2935B9AF26B7AD5D9967E0
+              D7AFAFB44D84335E0EB0F10D2E3323B72AFFB5BF295322A17ABFA7834BF92501
+              FA8A1AF78921D50CB5B29667F47695829014D4A009B97F6A7036F41415E389F3
+              A0AF964A30D733D0174990AD0C4CDC968E73AA5B02BCED852EA1EB6F321DDEAB
+              CA6DCDC7138AEB994208B76A1D70DE21A5BCB3DADDF6AC6A8E7E68E72F73CED7
+              AB269C178EA1AB6F51B50434376FD6CE2F19BC8D49F6247A6B0E4E5056B9B6F5
+              B43227A0DE5FB49D03DF2B982C8E79945B1602E3DB008CA19190B95FB544E1D0
+              0F8439FF3A93724B2068D8305C1E0C5C80D2C66ECF6AD5030F41D1F35EBF67B2
+              BEDBD373FE9AC13BE7E823AF08A9DD2839BC83CB3E46D2A1BA26401F761C3423
+              A141DC953B545394100525AEA6548276A4AEA823685910DE2E4F1E5ACAEC12EE
+              A974B71D429B1131279E76CD8741C964ADEA062807FB708C26CEE0220B994F63
+              7C9CD20DAEA17E6DC4192EE2B8718F4F0509A666B31D89447889C5016111FA65
+              EF4D4B4183CFE15674523D06C96501952295BF623520EECFF78D2199A7021758
+              196D27B555E5B4B7E3117E10B7D103363D1F045B2AF4F0E1D15068143D7B1F03
+              E6410F7EB2E553805BDB69B341B6F7B487D43F4A28228DEBA8949CF7511903AE
+              DC52607D388CB21105AD0497F20DD73CE85F3CB0708CDABC3ECFDEC69EC20B0D
+              FEE29F052206C54B3912CEC970683B169D9FFF9204E3432920BE2D53219988CE
+              29C0E26011E2927D9E4ABB01EF511907E3DD544887ED66AB8E68F47B1E474AB7
+              322E1FDAB2E59045188FDD0B48BB796480DD9BE1D4F654E5B7FA51D94F4AC9B6
+              511F06DA499CC9F2F674E8A6FE3E954CC86BA88C063503CBF5613E3E6CD515AA
+              735A7A71C6B7191377539DBC631AA1ED18A83E8CA9DF5A9D10D5B9ED6DB8653F
+              CCC882BDE8D4BBA81FF6F933E770433436D8B9910158A2BA27203EA7E2102524
+              C11180017334E488587505D2060D583DFE2BB4B486EABA63FF088CAD4C7A7298
+              6896423F6CFDE7E2046ED38BF40D6E4B6BC67C3860B54F439A3D62D0DCC481EA
+              566463C03D0441A32E357DDC79D7AA37124859AA1A4AEB13520FA63903ABC2C1
+              CC2C43936FA19AFB46730BCA66932E2E07BAD2C099A1A02B4BEEAECA6B7B4479
+              488E03E6E861C84CB5EA53400405D32BB806375C8CB81EF8517ECB87289ED51C
+              D8375DFEAE5F908AABAE1648189FE9CCCF54D52B227BF8A3397465C12D1EA77A
+              8C503F15CE082CB4EAD350E36E3D8EEE7F1EE36037293A2939A68627D0BFF7CC
+              EDE98C0B5FA3AFF8071F2C1A3A1FD21D4378F28E4E15CF4B6182A766538941FD
+              31951621C19895972488E5542643444EEE4CCB14EF1A9CFD1EAF27D755E7B5ED
+              A234839E720760F2AD06BFA75B32F6ACD0A00717588B83AD191E845E22D6D455
+              74AD1A6606341EF93295310E16A1347B6A1FC6106676B692EAC94082C835B149
+              475131407434F4141790A774937DD525D37FC504D0C08F57E7B69657B9DBF684
+              E5E417F1E8FF98D28CE06C6B749499C0885F8D37CD8848D5FE4E752BA8095E7F
+              F1498909A87A6D7B52BD8881561B96F0C7F161BE1C8FF94FE7D8028F519C5982
+              A932760C4DC74A1C226572021C5A1D9154CD09F0FA8A4FA3A783B179E3012980
+              35B3B070D7FB0A2FB96D04BA760816CAA1638CABD9331E74BD1E9304D5250ED3
+              65DC4A874572F6866A4A40BDCF733D2AFA4ABCAB1F524D9F78A8A9A764AE9093
+              6729C1627C2495F9E9C0014BB8349A80EBB85D12AF2EFC19A7197C6D8C09C3C6
+              533685183CE594F0D7405EFE8664F250DF5DFC873067C5CEA0B1ACAAA823406D
+              714204D4A39DB89F8D190BE1368C857842BD1C2C9D8A646E4365ABD100BEA29A
+              A3C07B93C30C7DEFEE82AE840C40C0C5DC8EB78303A867F7D6E4B5A1F8469140
+              8834C5D573EA28886081D49CE598124E28D3154131D4D8B37E0D9EB402CCE01A
+              98EC14E534654E00DE9F3661B4E0055F742D7E7F41493C27221208117EDEE54E
+              B7F394A3F8FC7167C08286B08D3FF2C0AA961165FE9F605D579CDA4F206856E0
+              C5AF9B73DBB72A728F8F2AB385198408D6E9C80C3F1A800B3B53829917F1A575
+              9019ECD1CA8296C4DBC02C400BB4E98E3CF4D8B7C36173EBE4989E82CAEC0DA4
+              CFDB9DEC119194500C0DBD455F437DB90FDD7B0789DDF4A3DBE02BDE8803B8E9
+              7FF4D45B4F6A27CAAE4B0ABE105F22CB30712E73411686973184A9F977F8786C
+              ACCC6BF9277D930C97251403063B4A857C1885B04E35916E95E2E7875150051E
+              6DD30C1A1876F8B004C37ADB03D3FBF1667916E3A90FA9FA536CC3BDD3137732
+              7C2A42E8991B711214527807534AD1AEB53E2B3126D3A2FF1609997A36A0373F
+              AEE208E68F41B0EB1B29A51091AB4186303B4298E7F0A29E46A74467FC28CEEE
+              B4DBE42DD5AB5FFD48F5B86A98152169D70FE25BBC5A3AF5330136B61C3D545E
+              91DBF60F65BEAAC0E8BF3272BFBFE455BB531BC1ABC6DB4E33A5B26A6D4B8F32
+              FDBF03E03F306BE1395180D2BD0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\viber_icon.png'
+          end>
+        Name = 'viber_icon'
+      end
+      item
+        MultiResBitmap.Height = 36
+        MultiResBitmap.Width = 36
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0441494441545847ED965F685B7514C7CFEFFE4B5C9B258BF807A6AE82304471
+              82B36DE24649D3EA1CB8A97D10D993309C88D836AD430419FAE09CA54DE7C344
+              671F86E083601526B6B34B24D8341527A2820F7BD0B1292A53932C5D9B3FF7DE
+              E3F9DDFE92354BF64BBAD7E503ED3DE7FC6EEFEF7BCF39BF730B2D5AB4B8D160
+              E2DA9023F3418FAEB99E048B0550613E66C3AFA0B1CFDBD4F48F2B25AF9FDF93
+              CE5BFFBE114A98CE1F5C274D099A5808EF63CC7C17407336AE226F16C1AD19DC
+              CC40AEE0C3F69FC93C89BA7E3CF2F0A93F797C3D3414C4C56433F0916F53F3D9
+              14ACD0CF5B99BCF9F67AB226DD8497C950F5737533D32468C39C51349F7E2994
+              581221298AB8D6C5E919891813F0226DF909028E01C2B86DE334D8F08F587660
+              0AF4170D6DFAD0D73D9A0849910AE20D2CAC2A32692801E2F092E7E63B8603F1
+              672281F8C1E1606C74E491F840C6EBDF4C329EA7DB72AB77AF8AF2B9D4D7842B
+              455AB2F154F86352FCAC702BD880A32381F838B7C7171EA50C5A9DF420B368B0
+              EF5EDD7E3ACBE393C9BE302A789ADB82BC8D78CF4830FE87F0EB22CD102DFE26
+              CC2BE44D5B63C6716E8E25FB6F4573F9ACC260863198C3129E9B58ECDDC9D7D2
+              C552829F3A6E0BDC8C3999932217C4EC692A0F0AB78CF972D7AC530E970A6DAA
+              EE6A73A2841BC0575CB1BE882EF41EF6BA95CF7CE071892507CAEC1E615E1369
+              C97823FADC1ADF9CF6BA82A5C0D6D1AED8596E47533D1D08EA5EB091F75B6736
+              AB74484684A9A4F5F6C1DDB36B33578554D03BDFF6DCAEDB5ACD70A3373D65DF
+              A40EBCF2E0DC6511AA30960C6D5119DBC7ACC241D0DC5E11AEA030F3CEC1EEC4
+              EFC2AD412A6832D57B1B02FB4BB8D5D8F605646C8AEA39D36E647F38B0FDFB92
+              5871984CF6DF8FB0B408CA864A493996AADE35DAF9D505E1D62015F4FE9987F4
+              E55CFB52F9D32021479D7686E6D1AC51B08E95876034157E8F2E2F709BC3C785
+              1F748FAC64D2A6E66F8D86C6BF4D55208303F47BB705E67911F2D0AB85E8141D
+              29BAB5C32246A30A9C3E2B43BDA5A3B7F48070EB2215E4C0F0A4B01CACBCB91C
+              E98E7D4003714603F509EAD3FFC49203A5FC1761727B8B302BD80C0684599786
+              82745BE133877F281D54B7B6219AEC7B8CDB4381F84FA66DDC4BB9788ECA3584
+              A8EC180EC47899E0D8373BE8AC9935439531BC5B987591F650998954F875BAF1
+              4DE1727288186933B227AE6E664E743EB4D566CA0945812E11AA4087602A1288
+              ED176E0D4D095A9D47CA0C25B44F841C4A25F85BD731414D759E9E54A490DF02
+              6B9B9AC72E3A0875B3CF10F70F05E353C2ADA129419CA38BBB36DA58F8F46A51
+              EBA190372F6DD4AC8E1777CEA745A886C64D2D18EC9EBD94C9DB8FD3D139446E
+              7E35BA3E0C973A2213C3693A436B195FE8DD4C6F42479FEDA127DC4721E77F9D
+              0CA42D1F6C52B9BD169E192E26128C7F2842D7E4BA04ADE5E897BB5CE05FB9A5
+              A4B858EE72E1A2CFCDB621AA4FF1D344533EA720A60CAB38DD28332D5AB4B841
+              01F81F0DC0834FCE51449E0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\skype3_icon.png'
+          end>
+        Name = 'skype3_icon'
+      end
+      item
+        MultiResBitmap.Height = 36
+        MultiResBitmap.Width = 36
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Width = 36
+            Height = 36
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000024000000240806000000E10098
+              98000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0705494441545847ED976B6C544514C7CFCCBDB75DA00B4534BE1A8DC1A820A0
+              42C57659A9DD057C3FA2812831219AA81183B45B5430686954A2C8768B8006A2
+              899A6822FAC188521EED9622DDB640894634F8802882F109C585BA8F7B673C67
+              767AD96D0B76C10F7EF0F7E59E7366EEBDFF3B73E6CC5CF8AFC1F4352FD6EC9A
+              641D4F8D188FB78F674C968084220960E3C3FEC0EB3E4BF0AE79FEA69F74F7BC
+              18B4202981453A037E26D84392C16D78E348DDD48F781CE430AFFC92015B6739
+              EC8D7CC40D4A50B8635A19739C9719E77E1DCA87849472AD04B3AEC6B7F9B08E
+              9D94530A5AB1E1A642674472294B892AF0985C87219D865F4C031A19871D20D8
+              7EE0763703D3C2713C5748390E47A6227E0CFC5E2F604CE3C0CF60C807ABCBA3
+              8D3A32202715B4B233382A6D8B0FB347450AE8629C2D1D6A1D59FF4869575A87
+              07645967C579A6301F42B3DA9DDE842D64A1B128E48B2E53FE000C28E8D54FFD
+              237BCC82A801EC6A1D8A63DE2C387A9DFFF53A5627746C50ACD876D339C24AAD
+              C257CDD221CC47B90445D56937877E826A5B2ACCE2427313B604C8B76DF8BEC0
+              92B7CE2F8B7EA53A9C069905515973EC4FBE0CA79151D21715C103215FF35BBA
+              8B8B9B17BD147BCCC5BD621CB00F58980F672286600C64A8AC65398A798C7C12
+              2592F6ABCB3B8397A90E59E4088AB44F1B83F3BC48BB09C329B8B3EAFAA603DA
+              3F63AACB9B5FC33AD540B6E131871A42ACA6D1538D9A1C414288E7713515908D
+              F35C5BEDDFF2996A4056B5541445DA03EF85DB035F4462816775386F8C23D642
+              5C1C7AC4F9B4151D8169193B832B88868FA79CBB9423EDFD47878F525FD24BD2
+              63AEA5C4E4C0C63949E7A9484B45B16ECA8BF9B76C4C4A2E9ED02E7E385BA04D
+              852BC81030A7B7D6486ED4D78D7B3FA51A90FA58602236DCA75D35DCACD0B85F
+              BB7983F9D488DBCDE764C7593CB8A2A3A24435205953266E5797849DF2A453EF
+              2A5B839DAED1A64BDA91736B656DD6FD8387921C33E76DB2BDE03584B46E560D
+              887A20D51D48882BC9161EB363EEF5DB8F907D2A4C5B8C2EDEBA75B876F306A7
+              6D9336519D708BAF12F497E5B9BC77BA38C82EBA66E3007CA14D17E1319EAEAE
+              6CEDD66EDE1CED115F83E8394E3693305605918C08479CA73C4242BF651E2A8F
+              EE7440BA2B0E3BED0D9545EBB5735AD455B6DA000587C896CCB9400511254832
+              364C79081685B8365D68CE99E455546175E40AAC593333F619C0796684003CCA
+              479420E032A9AE88E0271AB3A9F135B5167961B5765164FAB570ACE252ED9E1E
+              92AB9A678381599121334282FFA63C8449E60E5F5FA43CFE245E76673CF32CCE
+              CCA6E56D33AEC8F82708C782E3C31D81CABE55381B6A73EC6426556CF9BBBA22
+              4A10B38C6F948760C64FD0663F6A7C1D7FE179E70EDA7075E8E23477DA51C0EC
+              DE97D7EFBCF17CCEA0914B164551BB1B628199EBD6CD3454EF2CC23B67941856
+              E128B20DCEBF55414409AA2EDDF4335E7E203B09DC5FBB67A61ACA81A8F1450F
+              198510A4B333F938BFC528E01D7A797D47F061964E7F84E10BA98D8E2F989FEB
+              0E5E78B8B3DF9E653B6A0327F0A0B7539B7A84A85049A9EA02BD60C4B1C36EA1
+              1A88D0E4E6FD8EE03EBCEB531D522FC7E5BB061F56AA432E0E971769D305D5CD
+              D626A612DBA84D9DD48800EE5667E9E091F51F7862CA965FBB93367EA55C984C
+              D87FEAF080982037A88FD634B4072640D2D69BAADC5B3DB9C9AD7DAEA05079D3
+              36BC45ED2F9CF31B70F86F550DA7806A099E915FB20A0B2F216118FA2ED39241
+              9509091F242D63BE0E291CC15EEC2DC402D8CA6CB139F34AC949F9A01C7C50B5
+              AF39AF5A4379D2D036FD2A3C7E4DC4232FCE14EFAA9AB2658F6E56D4C7827350
+              C09BCAC15305EF1E32964E00CA47720461E779D8F915B2F1E18FE31173A56AF8
+              9708C7029365D269A1D3823AC60E87DB4365CD9FE866853B65048A99AE4DFC48
+              B1599BFF0A91EDC172CE9C4612433E15D9BE620857102D754CCE0AB2A9CE544D
+              6939519B702A5EDAEEF36A372FE8DE487BF0515C86512AA61413021A8759DD21
+              D5A10FEE9445DA2AA76236B72A87FE342D6B09A4ED006E620161B380690255D5
+              7AC7B2230B4A5BDDCA7A2AE89998AD2FF4F9B7FB48B2E3F75291D5A11C5C4178
+              2A7C8E31B698EC0440773A0E23E8EF403566E124EC1E5EC0D773CE3EB639DB11
+              EFB10FE06A4BD0616D48579BD7B2610C9702475AFD874DCCDC453B76DC2982A2
+              65253F8E7A66D6ACF7DDBDAB2FEE0BC36DC10ECEE13AEDE642E7163E94A67748
+              2690838DBFB0099EB0794FDA1C32D04720BBB910F3E64F698969FFA4A81C0AC7
+              669C856226A908822B20ED80D38E7F1ECFA35BD99D2A385B9AE6681CEE17840D
+              0733BD5CE8A7BE889235470CFE36235B71EFBBBBBBCC7FED60C410EA010DEDC1
+              7BF000B60437C466AC64CDA902BE6D6169D351D5A30F34352363DB276191998A
+              374FC0D34189608E176B0E4E033B8CC7857D787ADA25F039B4EFE9DBF2837E9F
+              B5F93FB900FC0DC01BBE28B50C7AAF0000000049454E44AE426082}
+            FileName = 
+              'C:\Users\Konferencija\Desktop\ufr-ndef-examples-cpp-wxwdigets\bi' +
+              'n\Release\ico\whatsapp2_icon.png'
+          end>
+        Name = 'whatsapp2_icon'
+      end
+      item
+        MultiResBitmap.LoadSize = 0
+        MultiResBitmap = <
+          item
+            Scale = 3.000000000000000000
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0555494441546843ED997D68557518C77FCFEFDC7BA743946D59165918840641
+              4A91F76ED6DADCD4A257414B1029C2281074D7F54F05B7FDA10C999B827F2806
+              8508964590FED1A6DB5DD3B6BBC294207A41482A8CDE746DF9B2DD97DFD3F3DC
+              3D8EDDDD73CE3D773BCC3FDC07C679BECF3DBF97E7777E2FCF395333CC708B03
+              72F585587775A06C567011AA64405C39800AA5078653179A6A7AD2E29A32BE06
+              D09658194554CB44DA02A0CE3544BA5A454E192D575F40A51689E90CE262B17C
+              C1B70078FA00AA79221D4105A57BFBD7CC1539657C0B604E28544E4FC0D3944C
+              65AEDF25E694F12D80801EA910B320DA0A4D6F00FBBAAB17ECED5FF5304F1371
+              E5815072A7980531A8EE11330F6E83DBDA73A6CEF19EF1147CE407CEBC16BC3A
+              72BE5981BE1D140E6985B407063BB7579EB8CCBFB77D59B35859F03C223C982D
+              E01150703EADCD276F86E3DFB3DEDDB7AA3CA05275464135AD135E23295456E3
+              8D769C2818405BA2EE59445C27320B15A2DD529DA3CB7FD491C7BDCEFD89703D
+              CAC069D43887EC65F9F5606FB432BE5F842DAE0DF3A8006476513325E29A5638
+              400CA877A38F76FD2CAE3C5CD700E8F4869BD579869F88C9E00691B63806D0D2
+              5BBD040C2C1779D3D0084B78518BCCC3368018C674405B9B263BB7193AD48641
+              AB3FB37F648B7B52189379E9E8D17596C81C6C0328FBBAB7C6202C14591C1A7F
+              A0C077FD9B4CBFD110EE6AE43FB6D9C7BFC95D45416517FCBAF052ADC81C6C47
+              784F5FFD0B4699B522BD01688C52871B23F193E2B1A525515B4FA3B6910E0ED7
+              F5371104ECD81E891F1639866D25031D959FD1A57D5479C34BE719BE87EF15E9
+              0D843373FE2EFD54540EAE73BCB5EF892AA5AC57C90C8E7A1CA0A9110DC7778A
+              F2446B7FED5B74063C20D216A03D9C86E6A38648FC7371E5E1FA18A3955FF486
+              D0345198FF88CB1634705C4CCF142A03800334BA3BDC3ACF149C875BAABA7FB1
+              527850641E3437934323E9A2172797E1B222F3D029B57F5BA4F3BC48473C2DA4
+              7428E398BFD3285D9ACC2B2297E1B222F3706B733C45ED047E034A3B66B75EF1
+              144020690D899907EDD1156E69B613B1588CDB2E1F55F9B8B5399E8201EC49D4
+              DD6F82EA7591790042686E49C07537B163DEEAD34B29CBB53D5D994C1036EFEB
+              ADB957A423AE01B4256A9FA4117E9B72FD3271D9021A9F11B318D6C8D51E54B7
+              2541C746B772676CCF8103C79E2EBD5A31BC9986F7117115C4001EF2729031BB
+              13354F016AD72C7302ED831D2B8E343535D119988BED13B832FFDADA623ACF50
+              451B394D10E948B6F30A5E14E9953565ABFB9E133B07DB2790CD571036892C0E
+              4EE6E890E27DFEC6F6CAD9EDBC44FF527A4BA469E37EFA3AA12DF860DBF2CE2E
+              9163D806C0A9EBC5BB2F37731628AEA2C9A6D0961AC48CA18C40CFA7BA6CDBF2
+              8206FC6D20FCD83B4DE0710AAD5FFF71466BEB4391930241CD42A3EEE08F0153
+              E93C15C4B4C91CB2EB3CE3B80B6D0D9FF88616E68F226F1AF4C2FF5563558F63
+              3F5CB7519A77477804444E3FA046D0048E88B2C53500FE1A800AFB448E21419D
+              A577E653530970B42CF69079D6AE1EDAAD8E15FA2EE41A00832A70942E29B6F9
+              C396A5CC71A3AC6DD1CAAEB686159D07D31A9BF92315FF5E0C942E7F472FBB3B
+              A295F1F7B82EAE93EBE636B237A0F9AB34789F6B2ACD50E085E1CF7C90D6F32F
+              5F1FF9D629F36C49D4BFACD1AC14E98ED6EF47C327E3A272E0BCAA7C76C943D6
+              F5918B5B6A7AFE10B7239E02F0426B7F7D2D8DE82B225D0148ED6C889C9AD40B
+              FE440A4E21AF984CF277310B9236258EEF01C5E25B00416BB6A70078B15E4926
+              5D176631F816C0D670FB102DC06B221DA1036ED0CF7FF2F9164016809FC47284
+              9EC005317DC1B745CCF00E32DDFF669D61865B1BA5FE07EFD3F2719C2D072000
+              00000049454E44AE426082}
+            FileName = 'C:\Users\Konferencija\Desktop\ic_settings_green.png'
+          end>
+        Name = 'ic_settings_green'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'navi_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'text_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'sms_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'email_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'geolocation_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'wifi_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'database_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'streetview_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'bluetooth_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'uri_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'bitcoin_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'phone_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'homeaddress_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'androidapp_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'contact_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'viber_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'skype3_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'whatsapp2_icon'
+            SourceRect.Right = 36.000000000000000000
+            SourceRect.Bottom = 36.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'ic_settings_green'
+          end>
+      end>
+    Left = 129
+    Top = 1
+  end
+end
